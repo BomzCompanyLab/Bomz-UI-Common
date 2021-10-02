@@ -1,0 +1,55 @@
+.transferSelectBox{
+	-fx-pref-width : 400;	
+}
+
+Button{
+	-fx-font-size :16;
+	-fx-font-weight : bold;
+	-fx-background-color : #FFFFFF;
+	-fx-text-fill : #000000;
+	-fx-pref-width : 40;
+	-fx-pref-height : 60;
+	
+	-fx-border-radius : 0;
+	-fx-border-color : #5d5d5d;
+	-fx-background-insets : 0;
+    -fx-background-radius : 0;
+}
+
+Button:pressed{
+	-fx-background-color : #ffe2e3;
+}
+
+.centerMoveButtonBox{
+	-fx-alignment : center;
+	-fx-spacing : 15;
+}
+
+.itemBox{
+	-fx-spacing : 4;
+}
+
+.itemBoxPane{
+	-fx-spacing : 10;
+}
+
+ScrollPane{
+	-fx-padding : 4;
+}
+
+.itemLb{
+	-fx-alignment : center;
+	-fx-font-size : 14;
+	-fx-pref-height : 34;
+	-fx-border-color : #5d5d5d;
+	-fx-background-color : #FFFFFF;
+}
+
+.itemLb:pressed{
+	-fx-background-color : #ffe2e3;
+}
+
+.titlePane{
+	
+}
+
