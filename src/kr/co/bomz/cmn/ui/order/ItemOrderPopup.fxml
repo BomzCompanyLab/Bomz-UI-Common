@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane ?>
+<?import javafx.scene.layout.FlowPane ?>
+<?import javafx.scene.layout.AnchorPane ?>
+
+<?import javafx.scene.control.Button ?>
+<?import javafx.scene.control.ListView ?>
+<?import javafx.scene.control.Label ?>
+
+<?import kr.co.bomz.cmn.ui.scroll.BomzScrollPane ?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="kr.co.bomz.cmn.ui.order.ItemOrderPopupController"
+	stylesheets="kr/co/bomz/cmn/ui/order/ItemOrderPopup.css">
+	
+	<top>
+		<FlowPane>
+			<Label text="정렬 순서 설정" />
+		</FlowPane>
+	</top>
+	
+	<center>
+		<AnchorPane fx:id="itemOrderPn">
+			<BomzScrollPane fx:id="itemOrderScrollPn">
+				<content>
+					<VBox styleClass="itemContentBox" />
+				</content>
+			</BomzScrollPane>
+		</AnchorPane>
+	</center>
+	
+	<right>
+		<VBox styleClass="moveButtonBox">
+			<Button text="▲" styleClass="orderBt" onAction="#handleOrderUpAction" focusTraversable="false"/>
+			<Button text="▼" styleClass="orderBt" onAction="#handleOrderDownAction" focusTraversable="false"/>
+		</VBox>
+	</right>
+	
+	<bottom>
+		<FlowPane>
+			<Button text="확인" styleClass="menuBt" onAction="#handleSubmitAction" focusTraversable="false"/>
+		</FlowPane>
+	</bottom>
+	
+</BorderPane>
+
