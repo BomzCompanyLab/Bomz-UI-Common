@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.bomz.cmn.db.ItemOrderMapper">
+		
+	<update id="updateItemOrder" parameterType="kr.co.bomz.cmn.db.ItemVO">
+		UPDATE		${tableName}
+		SET				${itemOrderColumn} = #{item.itemOrder}
+		WHERE		${itemIdColumn} = #{item.itemId}
+	</update>
+		
+</mapper>
+
