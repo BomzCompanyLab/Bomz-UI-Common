@@ -1,0 +1,66 @@
+BorderPane{
+	-fx-background-color : #FFFFFF;
+	-fx-padding : 10;
+	
+	-fx-border-color : #7F1619;
+	-fx-border-width : 5;
+	-fx-border-radius : 30;
+	
+	-fx-background-insets : 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius : 40;
+    -fx-effect : dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+
+#itemOrderPn{
+	-fx-pref-width : 400;
+	-fx-pref-height : 500;
+}
+
+FlowPane{
+	-fx-hgap : 20;
+	-fx-padding : 30;
+	-fx-alignment : center;	
+}
+
+
+Label{
+	-fx-font-size : 30;
+	-fx-font-weight : bold;
+}
+
+Button{
+	
+	-fx-alignment : center;
+	-fx-font-size : 20;
+	-fx-background-color : #FFFFFF;
+	-fx-border-color : #7F1619;
+	-fx-border-radius : 40;
+	
+	-fx-background-insets : 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius : 40;
+    -fx-effect : dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+
+.itemContentBox{
+	-fx-spacing : 10;
+}
+
+.moveButtonBox{
+	-fx-spacing : 60;	
+	-fx-padding : 20;
+}
+
+.menuBt{
+	-fx-pref-width : 150;
+	-fx-pref-height : 80;
+}
+
+.orderBt{
+	-fx-pref-width : 60;
+	-fx-pref-height : 100;
+	-fx-text-fill : #7F1619;
+}
+
+Button:pressed{
+	-fx-background-color : #AD7D80;
+}
