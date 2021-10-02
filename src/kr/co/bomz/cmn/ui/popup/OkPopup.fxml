@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.FlowPane ?>
+<?import javafx.scene.layout.VBox ?>
+<?import javafx.scene.control.Label ?>
+<?import javafx.scene.control.Button ?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="kr.co.bomz.cmn.ui.popup.OkPopupController"
+	stylesheets="kr/co/bomz/cmn/ui/popup/Popup.css">
+	
+	<FlowPane>
+		<Label fx:id="contentLb" />
+	</FlowPane>
+	
+	<FlowPane>
+		<Button fx:id="okBt" text="확인" onAction="#handleOkAction" focusTraversable="false" />
+	</FlowPane>
+	
+</VBox>
+
