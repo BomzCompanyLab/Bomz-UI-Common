@@ -1,0 +1,12 @@
+.offToggleBt{
+	-fx-background-radius : 25 0 0 25
+}
+
+.onToggleBt{
+	-fx-background-radius : 0 25 25 0
+}
+
+ToggleButton{
+	-fx-pref-width : 50;
+	-fx-pref-height : 30;
+}
